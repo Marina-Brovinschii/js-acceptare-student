@@ -1,0 +1,17 @@
+<script>
+
+    studentMark = +prompt("Nota medie ?")
+    studentBudget = +prompt("Citi bani ai pentru contract ?")
+    studentHome = confirm("Ai nevoie de un loc in camin?");
+
+    APPROVAL_MARK = 8.0
+    CONTRACT_COST = 10000
+
+    approved = studentMark >= APPROVAL_MARK || studentBudget >= CONTRACT_COST
+
+    alert("Este acceptat? " + approved)
+
+    placeStudent = studentMark >= APPROVAL_MARK
+
+    alert("Loc in camin - " + placeStudent)
+</script>
